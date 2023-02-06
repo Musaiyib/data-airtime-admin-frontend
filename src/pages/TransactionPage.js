@@ -202,7 +202,7 @@ export default function TransactionPage() {
                         </TableCell>
                         <TableCell align="left">{network}</TableCell>
                         <TableCell align="left">{amount}</TableCell>
-                        <TableCell align="left">{plan}</TableCell>
+                        <TableCell align="left">{!plan ? 'Airtime' : plan}</TableCell>
                         <TableCell align="right">
                           <IconButton size="large" color="inherit" onClick={handleOpenMenu}>
                             <Iconify icon={'eva:more-vertical-fill'} />
